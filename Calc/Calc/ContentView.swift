@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Calculator
+//  Calc
 //
 //  Created by sjkim on 2022/02/02.
 //
