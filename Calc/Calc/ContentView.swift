@@ -168,9 +168,13 @@ struct ContentView: View {
             }
         case .clear:
             self.value = "0"
-            break;
-        case .decimal, .negative, .percent:
-            break;
+            break
+        case .decimal, .percent:
+            break
+        case .negative:
+            let number = ( Int(self.value) ?? 0 ) * -1
+            self.value = String(number)
+            break
         default:
             let number = button.rawValue
             if self.value == "0" || self.currentTab != "" {
